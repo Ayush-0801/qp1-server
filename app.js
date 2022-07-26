@@ -128,11 +128,11 @@
          {
            wot=1;
            console.log('Finished Playing: ' + data.body.item.name);
-           res.send({song:data.body.item.id,state:"ended", seek:data.body.item.progress_ms}); 
+           res.send({song:data.body.item.id,state:"ended", seek:data.body.progress_ms}); 
          }
          else
          {
-           res.send({song:data.body.item.id,state:"playing", seek:data.body.item.progress_ms});
+           res.send({song:data.body.item.id,state:"playing", seek:data.body.progress_ms});
          } 
        }
        else
